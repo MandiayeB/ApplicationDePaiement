@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\Mandiaye\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\Mandiaye\\.nuget\\packages"
+    ]
+  }
+}
