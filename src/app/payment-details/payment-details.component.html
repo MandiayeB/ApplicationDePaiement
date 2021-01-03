@@ -1,0 +1,38 @@
+<nav class="navbar fixed-top navbar-light bg-light navbar-expand-lg p-4">
+    <div class="container">
+        <a class="navbar-brand" href="#">
+            <img src="../../logo.png" alt="Signature" width="75%" length="75%">
+        </a>
+        <div class="navbar-collapse">
+            <h1 class="display-4 titlepro">Informations de paiement</h1>
+        </div>
+    </div>
+</nav>
+
+<div class="row content">
+    <div class="col-md-5">
+        <app-payment-detail-form></app-payment-detail-form>
+    </div>
+    <div class="col-md-7">
+        <table class="table">
+            <thead class="thead-light">
+                <tr>
+                    <th>Propriétaire de la carte</th>
+                    <th>Numéro de carte</th>
+                    <th>Date d'expiration</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor='let pd of service.list'>
+                    <td (click)="populateForm(pd)">{{pd.cardOwnerName}}</td>
+                    <td (click)="populateForm(pd)">{{pd.cardNumber}}</td>
+                    <td (click)="populateForm(pd)">{{pd.expirationDate}}</td>
+                    <td>
+                        <i class="far fa-trash-alt fa-lg text-danger" (click)="onDelete(pd.paymentDetailId)"></i>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

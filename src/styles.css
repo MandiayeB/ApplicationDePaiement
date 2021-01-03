@@ -1,1 +1,44 @@
-/* You can add global styles to this file, and also import other style files */
+.form-group label {
+    color: grey;
+}
+
+.form-group input {
+    font-weight: 400;
+}
+
+.form-group input::placeholder {
+    color: #c0bdbd;
+    font-weight: 300;
+    font-size: medium;
+}
+
+thead th{
+    font-weight: 400;
+}
+
+table tr:hover {
+    background-color: #f8efe6;
+    cursor: pointer;
+}
+
+input.invalid {
+    border-color: red;
+}
+
+.content {
+    margin-top: 200px;
+    background-color: #FFF;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    padding: 80px;
+    z-index: 0
+}
+
+.titlepro {
+    margin-left: 160px;
+}
+
+.wallpaper {
+    background-image: url("wallpaper.jpg");
+    background-size: cover;
+}

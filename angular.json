@@ -25,10 +25,13 @@
             "aot": true,
             "assets": [
               "src/favicon.ico",
+              "src/logo.png",
+              "src/wallpaper.png",
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "node_modules/ngx-toastr/toastr.css"
             ],
             "scripts": []
           },
